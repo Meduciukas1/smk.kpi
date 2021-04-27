@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logo/logoo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Vaida Pokvytytė</title>
+    <script src="https://kit.fontawesome.com/6e8c0214dc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a').click(function(){
+                // alert("i am click");
+                var selected = $(this);
+                $('a').removeClass('active');
+                $(selected).addClass('active'); 
+            });
+
+            var $a = $('.a'),
+            $b = $('.b'),
+            $c = $('.c'),
+            $d = $('.d'),
+            $home = $('.home'),
+            $aboutus = $('.aboutus');
+            $gallery = $('.gallery'),
+            $contactus = $('.contactus'),
+
+            $a.click(function(){
+                $home.fadeIn();
+                $aboutus.fadeOut();
+                $gallery.fadeOut();
+                $contactus.fadeOut();
+            });
+            $b.click(function(){
+                $aboutus.fadeIn();
+                $home.fadeOut();
+                $gallery.fadeOut();
+                $contactus.fadeOut();
+            });
+            $c.click(function(){
+                $gallery.fadeIn();
+                $home.fadeOut();
+                $aboutus.fadeOut();
+                $contactus.fadeOut();
+            });
+            $d.click(function(){
+                $contactus.fadeIn();
+                $home.fadeOut();
+                $gallery.fadeOut();
+                $aboutus.fadeOut();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="background">
+        <div class="nav">
+            <a  class="a active" href="#">PRADŽIA </a>
+            <a  class="b" href="#">APIE MANE</a>
+            <a  class="c" href="#">GALERIJA</a>
+            <a  class="d" href="#">SUSISIEK</a>
+        </div>
+        <div class="content">
+            <div class="home">
+                <h1>Aš esu Vaida Pokvytytė</h1>
+                <h3>Kauno neįgaliųjų rekreacijos ir sporto klubo vadovė</h3>
+            </div>
+            <div class="aboutus">
+                <h1><b>Susipažinkime,</b></h1> <br>
+                <p>Esu Vaida Pokvytytė, Lietuvos sporto universiteto dėstytoja, Kauno neįgaliųjų rekreacijos ir sporto klubo prezidentė. </p> <br>
+                <p>Mano pagrindinis darbas yra sporto universitete – esu mokslo darbuotoja. Tai yra mano pagrindinis darbas. O Kauno neįgaliųjų rekreacijos ir sporto klube aš ir šiomis dienomis dirbu savanoriškais pagrindais. Esu klubo prezidentė, tenka vesti ne tik treniruotes, bet ir organizuoti visą treniruočių procesą treneriams. Taip pat tenka organizuoti renginius, rašyti projektus. Ruošiu paraiškas varžyboms, organizuoju sportininkų keliones į varžybas. </p> <br>
+                <p>Būdama studentė pradėjau savanoriauti. Pradžioje - nuo “Special Olypics” - tai yra specialioji olimpiada skirta vaikams ir jaunimui su intelekto sutrikimais. Paskui teko dirbti baseine kaip savanorei reabilitacijos programoje su žmonėmis po insulto. Dariau ir klaidų, nes maniau, kad ligos ir negalios paliestus žmones turiu labai saugoti, bet vėliau mano požiūris pasikeitė. Dabar aš skatinu juos stengtis, kiek įmanoma viską padaryti patiems. Nebesu ta, kuri tik ir žiūri, kam ateiti į pagalbą. </p> <br>
+                <p>Socialinė medija mums labai padeda populiarinti neįgaliesiems skirtas veiklas.  Šiemet vedžiau tiesiogines treniruotes per “Facebook”.</p> <br>
+                <p><b>Jei turite klausimų, pastebėjimų arba pasiūlymų – susisiekite.</b></p>
+            </div>
+            <div class="gallery">
+                <div class="image">
+                    <img src="img/2.jpg" alt="2 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/14.jpg" alt="14 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/6.jpg" alt="6 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/3.jpg" alt="3 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/4.jpg" alt="4 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/5.jpg" alt="5 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/7.jpg" alt="7 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/8.jpg" alt="8 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/9.jpg" alt="9 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/11.jpg" alt="11 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/12.jpg" alt="12 nuotrauka">
+                </div>
+                <div class="image">
+                    <img src="img/13.jpg" alt="13 nuotrauka">
+                </div>
+            </div>
+            <div class="contactus">
+                <div class="contactform">
+                    <form action="index.html" method="post">
+                        <input type="text" name="" class="inputtext" value="Vardas">
+                        <input type="text" name="" class="inputtext" value="Pavardė">
+                        <input type="text" name="" class="inputtext" value="Email">
+                        <textarea cols="4" rows="6" class="inputmessage">Žinutė...</textarea>
+                        <input type="button" name="" class="submitbutton" value="Siųsti">
+                    </form>
+                </div>
+                <div class="social-menu">
+                    <ul>
+                        <li><a href="https://www.facebook.com/vaida.pokvytyte"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/pokvytyte/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/vaida-pokvytyte-92395579/?originalSubdomain=lt"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCgkMT2zBXBMU6iM83vBo52Q/videos"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
